@@ -9,9 +9,12 @@ class Mailer
 
     public function __construct($fromName, $fromEmail)
     {
-        $this->headers  = 'MIME-Version: 1.0' . PHP_EOL;
-        $this->headers .= 'Content-type: "text/html"; charset="utf-8"' . PHP_EOL;
-        $this->headers .= 'From: "' . $fromName . '" <' . $fromEmail . '>' . PHP_EOL;
+        $endOfLine = "\n";
+        $boundary = "-----=".md5(rand());
+
+        $this->headers = "From: \"".$fromName."\"<".$fromEmail.">".$endOfLine;
+        $this->headers .= "MIME-Version: 1.0".$endOfLine;
+        $this->headers .= "Content-Type: text/html;".$endOfLine." boundary=\"$boundary\"".$endOfLine;
     }
     
     public function loadContent($html)

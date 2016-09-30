@@ -280,10 +280,6 @@ class ShopController extends BackController
         $this->app->setMember($member);
 
 
-        /***** SUPPRESSION PANIER *****/
-        $cart->emptyCart();
-
-
         /***** ENVOI MAIL *****/
 
         $fromName = $this->app->getConfig()->get('sendMailFromName');
@@ -298,6 +294,9 @@ class ShopController extends BackController
         if ($mailer->sendMail('arnaud.thibaudet@gmail.com', 'Votre facture sur Ifogames')) {
             $this->app->getHttpResponse()->addFlashes('success', 'mail envoyé');
         }
+
+        /***** SUPPRESSION PANIER *****/
+        $cart->emptyCart();
 
 
         $this->page->addVars([

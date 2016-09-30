@@ -1,8 +1,7 @@
 <h1>facture</h1>
 
 <h2>infos membres</h2>
-<?php echo $member->getFirstname(); ?>
-<?php echo $member->getLastname(); ?>
+<?php echo $member->getFirstname().' '.$member->getLastname(); ?>
 
 <h2>articles commandés</h2>
 <?php
