@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+    Fichier de configuration des Routes de l'application Frontend
+    *************************************************************
+
+    Chaque route est définie dans un bloc <route></route> comprenant :
+        url=""       : la route complète (url)
+        module=""    :  le nom du module correspondant (ex: Forum, Home...), et par conséquent
+                        le nom du Controller associé
+        action=""    : l'action du controller à executer
+        vars=""      : [optionnel] la liste des variables de l'url, séparées par une virgule
+                       (voir Expressions Régulières plus bas)
+
+    Les vues ne sont pas déclarée, elles doivent porter le même nom que les actions correspondantes
+
+
+    Expressions Régulières :
+    **********************
+
+    Les routes prennent en compte les expressions régulières pour définir des variables que l'on récupère
+    dans les controlleurs comme des variables $_GET
+    Il faut dans ce cas utiliser des parenthèses capturantes
+
+    C'est la méthode getController de la classe Application qui gère tout ceci
+ -->
+
+<routes>
+
+    <!-- HOME Section -->
+    <route url="/ifogames/([a-z]{2})/" module="Home" action="index" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/cgv" module="Home" action="cgv" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/contact" module="Home" action="contact" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/mentions" module="Home" action="mentions" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/sitemap" module="Home" action="sitemap" vars="locale"></route>
+
+    <!-- MEMBER Section -->
+    <route url="/ifogames/([a-z]{2})/login" module="Member" action="login" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/logout" module="Member" action="logout" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/register" module="Member" action="register" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/profile" module="Member" action="profile" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/profile/editinfos" module="Member" action="profileEditInfos" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/profile/editaddress" module="Member" action="profileEditAddress" vars="locale"></route>
+
+    <!-- SHOP Section -->
+    <route url="/ifogames/([a-z]{2})/shop" module="Shop" action="index" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/all" module="Shop" action="all" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/cart" module="Shop" action="showCart" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/cart/add" module="Shop" action="addToCart" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/cart/empty" module="Shop" action="emptyCart" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/cart/remove" module="Shop" action="removeItem" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/checkout" module="Shop" action="checkout" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/payment" module="Shop" action="payment" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/before-checkout" module="Shop" action="beforeCheckout" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/checkout/complete" module="Shop" action="checkoutComplete" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/shop/game/details" module="Shop" action="gameDetails" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/search" module="Shop" action="search" vars="locale"></route>
+
+    <!-- FORUM Section -->
+    <route url="/ifogames/([a-z]{2})/forum" module="Forum" action="index" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/forum/rubrique/([0-9a-z_-]+)(?:/page-(\d+))?" module="Forum" action="showSection" vars="locale,section_slug,page"></route>
+    <route url="/ifogames/([a-z]{2})/forum/discussion/([0-9a-z_-]+)(?:/page-(\d+))?" module="Forum" action="showThread" vars="locale,thread_slug,page"></route>
+    <route url="/ifogames/([a-z]{2})/forum/discussion/([0-9a-z_-]+)(?:/edit-(\d+))?" module="Forum" action="editPost" vars="locale,thread_slug,id_post"></route>
+
+    <!-- HOME ADMIN Section -->
+    <route url="/ifogames/([a-z]{2})/admin" module="Home" action="index" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/member/list" module="Home" action="membersList" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/member/details" module="Home" action="memberDetails" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/member/delete" module="Home" action="deleteMember" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/order/list" module="Home" action="ordersList" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/order/details" module="Home" action="orderDetails" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/game/list" module="Home" action="gamesList" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/game/details" module="Home" action="gameDetails" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/game/edit" module="Home" action="gameEdit" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/game/add" module="Home" action="gameAdd" vars="locale"></route>
+    <route url="/ifogames/([a-z]{2})/admin/game/delete" module="Home" action="deleteGame" vars="locale"></route>
+
+</routes>

@@ -1,0 +1,1 @@
+<h1><?php echo $translator->get('section_title.home.home'); ?></h1>

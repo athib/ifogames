@@ -1,0 +1,246 @@
+@font-face
+{
+    font-family: 'Avenir';
+    src: url('./fonts/AvenirLTStd-Book.otf');
+}
+
+body
+{
+    font-family: 'Avenir';
+    color: #0C4D6C;
+    background-color: #E3E3E3;
+}
+
+label:not(.force-display) {
+    display: none !important;
+}
+.my_flashbag
+{
+    /*background-color: lightskyblue;
+    padding: 5px;
+    margin-bottom: 10px;*/
+}
+
+.my_main_content
+{
+    background-color: #F8F8F8;
+    padding: 30px;
+    min-height: 300px;
+}
+
+.menu-lateral {
+    background-color: white;
+}
+
+/*.modal-content
+{
+    padding: 20px;
+}*/
+
+.container
+{
+}
+
+.form_error
+{
+    color: red;
+}
+.row-centered {
+    text-align: center;
+}
+.row-centered div {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.navbar
+{
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#banniere
+{
+    width: 100%;
+}
+
+footer .navbar
+{
+    padding-top: 15px;
+}
+
+footer .navbar a:hover
+{
+    text-decoration: none;
+}
+
+footer .navbar li
+{
+    display: inline-block;
+}
+
+footer .navbar li + li
+{
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 1px solid lightgrey;
+}
+
+footer .navbar .author
+{
+    text-align: right;
+}
+
+/* Place une trait de separation vertical sur la page de connexion/inscription
+ * Plus utilisé pour l'instant */
+@media (min-width: 768px)
+{
+    .col-split-2 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .col-split-2:after {
+        content: '';
+        width: 1px;
+        background: #eeeeee;
+        left: 50%;
+        top: 40px;
+        bottom: 40px;
+        display: block;
+        position: absolute;
+    }
+}
+
+.separator
+{
+    height: 50px;
+}
+
+.locale_flag
+{
+    display: inline-block;
+    width: 20px;
+    height: auto;
+}
+/* Corrige le bug bootstrap qui place un border bleu autour du lien qui appelle le Modal de login */
+/*#user-menu li a:focus
+{
+    outline: none;
+}*/
+
+.clear {
+    clear: both;
+}
+.no-display {
+    display: none;
+}
+
+.active {
+    background: #0C4D6C;
+}
+
+
+/*********************
+ *      BOUTONS      *
+ *********************/
+
+.my-btn-danger {
+    background: white;
+    color: #C12E2A;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+}
+.my-btn-danger:hover {
+    color: white;
+    background: #C12E2A;
+}
+
+.my-btn-primary {
+    background: #0C4D6C;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.my-btn-default {
+    background: white;
+    color: #0C4D6C;
+    border: 1px solid #0C4D6C;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+}
+.my-btn-default:hover {
+    border: 1px solid #0C4D6C;
+    color: white !important;
+    background: #0C4D6C !important;
+}
+
+.my-btn-search {
+    width: 60px;
+    border-left: none;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+    color: #0C4D6C;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+    background: #0C4D6C;
+    color: white;
+}
+
+.form-error {
+    color: red;
+}
+
+.my_search input {
+    float: right;
+    border: 1px solid #0C4D6C;
+    height: 40px;
+    width: 40%;
+}
+
+.hidden {
+    display: none;
+}
+
+.forget-link {
+    font-style: italic;
+}
+
+#profile-content input {
+    width: 50%;
+    margin-bottom: 5px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: #E2E6FF;
+}
+
+#profile-content input:focus {
+    border-bottom: 1px solid #0C4D6C;
+}
+
+form input {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 35px;
+    border: none;
+}
+
+form input:focus {
+    outline: none;
+    border-bottom: 1px solid #0C4D6C;
+}

@@ -1,0 +1,17 @@
+# Toutes les routes sont redirigées vers le fichiers d'initialisation de l'application
+# l'url réécrite devient alors un simple paramètre permettant de déclencher la bonne action correspondante
+
+# Le fichier d'initialisation instanciera la bonne "version" de l'application (visiteur ou admin) selon
+# le paramètre GET indiqué
+
+
+# Activation du module de réécriture d'url
+RewriteEngine On
+
+# redirection des routes admin/*
+RewriteRule ^([a-z]{2}/admin)(/.*)?$ launcher.php?app=Backend [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Redirection des autres routes
+RewriteRule ^([a-z]{2}/)?(.*)$ launcher.php?app=Frontend [QSA,L]

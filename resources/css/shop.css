@@ -1,0 +1,145 @@
+
+#menu-filters {
+    padding: 20px 10px;
+    background-color: white;
+}
+
+#menu-filters h3 {
+    margin-top: 0;
+}
+
+#games-list .row {
+    margin-bottom: 2em;
+}
+
+
+/**********************
+ *    BLOC PRODUIT    *
+ **********************/
+
+.product-holder {
+    float: left;
+}
+.product-item {
+    background-color: white;
+    padding: 20px 5px;
+    height: 330px;
+    margin: auto;
+    width: 100%;
+
+}
+.product-item:hover {
+    border: 1px solid #0C4D6C;
+}
+.product-title {
+    font-size: 2.0rem;
+}
+.product-img img {
+    max-width: 100px;
+    margin: auto;
+    transition: all 0.2s;
+}
+
+.product-img img:hover {
+    transform: scale(1.2);
+}
+
+span.select2-selection.select2-selection--single {
+    outline: none;
+}
+
+
+/*********************************
+ *    TITRES ACCUEIL BOUTIQUE    *
+ *********************************/
+
+.section-title:before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 1px;
+    width: 80%;
+    background: #cfcfcf;
+}
+.section-title {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding: 0 10px;
+}
+.section-title span {
+    background: #f8f8f8;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+
+
+/**********************
+ *    MENU FILTRES    *
+ **********************/
+
+.filter-item {
+    cursor: pointer;
+}
+
+span.filter {
+    display: inline-block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 1px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#remove-filters {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/***** CART *****/
+
+.cart-item,
+#checkout-content .infos {
+    background: white;
+}
+#checkout-content .infos {
+    padding: 20px 10px;
+}
+#checkout-content .infos fieldset {
+    margin-bottom: 50px;
+}
+
+.items-holder .cart-item {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.cart-labels {
+    border-top: 1px solid lavender;
+    border-bottom: 1px solid lavender;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#cart-content .summary,
+#checkout-content .summary {
+    background: white;
+    border: 1px solid lavender;
+    padding: 10px 5px;
+}
+
+#checkout-content .validate-cart {
+    display: none;
+}

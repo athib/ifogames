@@ -1,0 +1,54 @@
+.popup {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    background-color: #D6D6D6;
+    background-color: #F2F2F2;
+    right: 30px;
+    max-width: 300px;
+    z-index: 999999;
+    padding: 5px;
+    border: 1px solid #D2D2D2;
+}
+
+.popup h1 {
+    background-color: #0C4D6C;
+    margin: 0px;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.popup h1.info {
+    background-color: blue;
+}
+.popup h1.success {
+    background-color: green;
+}
+.popup h1.warning {
+    background-color: orange;
+}
+.popup h1.danger {
+    background-color: red;
+}
+
+.popup h1 img {
+    float: right;
+    cursor: pointer;
+    width: 20px;
+
+}
+
+.popup p {
+    margin: 0px;
+    padding: 5px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    color: #0C4D6C;
+    cursor: default;
+}
+
+.popup li {
+    color: #2F2F31;
+}

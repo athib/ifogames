@@ -1,0 +1,8 @@
+#profile-content .list-orders,
+#profile-content .profile-infos {
+    background-color: white;
+}
+
+label {
+    display: inline-block !important;
+}

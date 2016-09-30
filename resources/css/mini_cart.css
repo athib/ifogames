@@ -1,0 +1,50 @@
+/*********************
+ *      MINICART      *
+ *********************/
+
+#mini-cart {
+    width: 350px;
+}
+.empty-cart hr {
+    margin: 0;
+}
+ul#cart-items {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+li.cart-item {
+    padding-top: 5px;
+    list-style-type: none;
+}
+li.cart-item:hover {
+    background: lightblue;
+}
+.product-thumb img {
+    max-height: 50px;
+}
+.minicart-remove-item {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    padding: 5px;
+}
+
+.mini-cart-total {
+    padding: 5px;
+}
+.mini-cart-total .subtotal {
+    display: inline-block;
+    float: left;
+}
+.mini-cart-total .my-btn-default {
+    display: inline-block;
+    float: right;
+}
+
+span.minicart-remove-item,
+.empty-cart {
+    cursor: pointer;
+}
+.empty-cart {
+    text-align: center;
+}

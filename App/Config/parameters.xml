@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+    Fichier de configuration de l'application Frontend
+
+    Chaque variable est définie dans un bloc <define></define> comprenant :
+        var=""      : le nom de la variable
+        value=""    : la valeur de la variable
+
+
+    Cas particuliers
+    *****************
+        Pour certaines variables, on configure plusieurs valeurs. Par exemple, la liste des langues
+        disponibles.
+        On a donc un attribue 'values' et non 'value'.
+        La pluralité a une grande importance car à la lecture de ce fichier, si c'est values qui est
+        detecté, alors le traitement sera différent
+ -->
+
+<definitions>
+
+    <!-- CORE -->
+
+    <define var="available_locales" values="fr,en"></define>
+    <define var="default_locale" value="fr"></define>
+    <define var="sendMailFromName" value="IFOGAMES"></define>
+    <define var="sendMailFromEmail" value="ifogames@athib.com"></define>
+
+
+    <!-- FORUM -->
+
+    <define var="forum_threads_per_page" value="3"></define>
+    <define var="forum_posts_per_page" value="5"></define>
+
+
+    <!-- SHOP -->
+
+    <define var="nb_last_games" value="3"></define>
+
+</definitions>

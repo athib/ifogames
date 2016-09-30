@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+    Fichier de traduction FR de l'application
+    *****************************************
+
+    Chaque traduction est définie par une balise <trans> comprenant :
+        - un attribut 'var'    : la clé de traduction
+        - entre les balises   : la traduction
+ -->
+
+<translations>
+
+    <!-- ***** CORE ***** -->
+
+    <trans var="core.error.no_route">
+        Désolé, l'url saisie ne mène nulle part.<![CDATA[<br/>]]>
+        Nous vous avons ramené sur la page d'accueil.
+    </trans>
+
+    <trans var="core.page_title.login">Page de connexion</trans>
+    <trans var="core.page_title.register">Page d'inscription</trans>
+    <trans var="core.page_title.register">Page de profil</trans>
+    <trans var="core.page_title.before_checkout">Validation du panier</trans>
+    <trans var="core.page_title.checkout">Validation du panier</trans>
+    <trans var="core.page_title.cart">Votre panier</trans>
+    <trans var="core.page_title.all_games">Tous nos jeux</trans>
+    <trans var="core.page_title.shop_home">Accueil de la boutique</trans>
+    <trans var="core.page_title.payment">Récapitulatif et paiement</trans>
+    <trans var="core.page_title.checkout_complete">Confirmation de commande</trans>
+
+    <trans var="section_title.home.home">Accueil du site</trans>
+    <trans var="section_title.home.conditions">Mentions légales</trans>
+    <trans var="section_title.home.cgv">Conditions Générales de vente</trans>
+    <trans var="section_title.home.sitemap">Plan du site</trans>
+    <trans var="section_title.user.login">Se connecter</trans>
+    <trans var="section_title.user.register">S'inscrire</trans>
+    <trans var="section_title.user.profile">Page de profil</trans>
+    <trans var="section_title.shop.home">Bienvenue sur la boutique !</trans>
+    <trans var="section_title.shop.search">Résultat de recherche</trans>
+    <trans var="section_title.shop.all_games">Tous nos jeux</trans>
+    <trans var="section_title.shop.checkout">Validation des données</trans>
+    <trans var="section_title.forum.home">Accueil du forum</trans>
+    <trans var="section_title.shop.checkout_complete">Merci pour votre commande</trans>
+
+    <trans var="core.main_menu.site_title">ifogames</trans>
+    <trans var="core.main_menu.home">Accueil</trans>
+    <trans var="core.main_menu.shop">Boutique</trans>
+    <trans var="core.main_menu.forum">Forum</trans>
+    <trans var="core.main_menu.login">Connexion</trans>
+    <trans var="core.main_menu.register">Inscription</trans>
+    <trans var="core.main_menu.logout">Déconnexion</trans>
+    <trans var="core.main_menu.my_account">Mon compte</trans>
+    <trans var="core.main_menu.welcome">Bienvenue %placeholder% !</trans>
+    <trans var="core.main_menu.search">Votre recherche</trans>
+    <trans var="core.main_menu.admin">Administration</trans>
+
+    <trans var="core.foot_menu.legals">Mentions légales</trans>
+    <trans var="core.foot_menu.cgv">C.G.V.</trans>
+    <trans var="core.foot_menu.contact">Contact</trans>
+    <trans var="core.foot_menu.sitemap">Plan du site</trans>
+    <trans var="core.foot_menu.switch_french">Traduire en français</trans>
+    <trans var="core.foot_menu.switch_english">Traduire en anglais</trans>
+    <trans var="core.foot_menu.site_title">ifogames</trans>
+    <trans var="core.foot_menu.made_by">Réalisé par Arnaud</trans>
+
+
+    <!-- ***** PROFILE ***** -->
+    <trans var="user.profile.infos">Informations personnelles</trans>
+    <trans var="user.profile.id_member">id_member</trans>
+    <trans var="user.profile.username">Nom d'utilisateur</trans>
+    <trans var="user.profile.firstname">Votre prénom</trans>
+    <trans var="user.profile.lastname">Votre nom</trans>
+    <trans var="user.profile.email">Votre e-mail</trans>
+    <trans var="user.profile.phone">Votre téléphone</trans>
+    <trans var="user.profile.address">Vos adresses enregistrées</trans>
+    <trans var="user.profile.billing_address">Votre adresse de facturation</trans>
+    <trans var="user.profile.mailing_address">Votre adresse de livraison</trans>
+    <trans var="user.profile.edit_infos">Modifier mes informations</trans>
+    <trans var="user.profile.edit_billing_address">Modifier</trans>
+    <trans var="user.profile.edit_mailing_address">Modifier</trans>
+    <trans var="user.profile.edit">Modifier</trans>
+    <trans var="user.profile.validate">Valider</trans>
+
+
+    <!-- ***** FORMULAIRES ***** -->
+
+    <trans var="form.generic.firstname">Prénom</trans>
+    <trans var="form.generic.lastname">Nom</trans>
+    <trans var="form.generic.street">Rue</trans>
+    <trans var="form.generic.email">E-mail</trans>
+    <trans var="form.generic.city">Ville</trans>
+    <trans var="form.generic.postal_code">Code postal</trans>
+    <trans var="form.generic.country">Pays</trans>
+    <trans var="form.generic.phone">Téléphone</trans>
+
+    <trans var="form.checkout.fieldset_member">Informations client</trans>
+    <trans var="form.checkout.fieldset_billing">Adresse de facturation</trans>
+    <trans var="form.checkout.fieldset_mailing">Adresse de livraison</trans>
+    <trans var="form.checkout.submit">Valider</trans>
+    <trans var="form.checkout.same_as_billing">Identique à l'adresse de facturation</trans>
+
+    <trans var="user.login_form.login">Votre pseudo ou email</trans>
+    <trans var="user.login_form.pseudo">Votre pseudo</trans>
+    <trans var="user.login_form.password">Votre mot de passe</trans>
+    <trans var="user.login_form.forgot">J'ai oublié mon mot de passe</trans>
+    <trans var="user.login_form.submit_btn">Connexion</trans>
+
+    <trans var="user.register_form.pseudo">Votre pseudo</trans>
+    <trans var="user.register_form.email">Votre email</trans>
+    <trans var="user.register_form.password">Votre mot de passe</trans>
+    <trans var="user.register_form.password_confirm">Confirmez zotre mot de passe</trans>
+    <trans var="user.register_form.submit_btn">Inscription</trans>
+
+    <trans var="admin.addgame_form.title">Titre</trans>
+    <trans var="admin.addgame_form.description">Description</trans>
+    <trans var="admin.addgame_form.editor">Editeur du jeu</trans>
+    <trans var="admin.addgame_form.pegi">PEGI</trans>
+    <trans var="admin.addgame_form.release_date">Date de sortie</trans>
+    <trans var="admin.addgame_form.price">Prix</trans>
+
+
+    <trans var="validator.form.name">Le champ "%placeholder%" n'est pas valide</trans>
+    <trans var="validator.form.not_null">Le champ "%placeholder%" ne peut être nul</trans>
+    <trans var="validator.form.not_null">Le champ "%placeholder%" ne peut être nul</trans>
+    <trans var="validator.form.max_length">Le champ "%placeholder%" est trop long</trans>
+    <trans var="validator.form.min_length">Le champ "%placeholder%" est trop court</trans>
+    <trans var="validator.form.pattern">Le champ "%placeholder%" n'est pas valide</trans>
+    <trans var="validator.form.password_confirm">Votre mot de passe et sa confirmation de correspondent pas</trans>
+    <trans var="validator.form.date">Le champ "%placeholder%" n'a pas un format de date valide</trans>
+    <trans var="validator.form.date">Le champ "%placeholder%" ne doit ontenir que des lettres</trans>
+
+    <trans var="validator.placeholder.username">pseudo</trans>
+    <trans var="validator.placeholder.password">mot de passe</trans>
+    <trans var="validator.placeholder.firstname">prénom</trans>
+    <trans var="validator.placeholder.lastname">nom</trans>
+    <trans var="validator.placeholder.email">e-mail</trans>
+    <trans var="validator.placeholder.phone">téléphone</trans>
+    <trans var="validator.placeholder.billing_address">adresse de facturation</trans>
+    <trans var="validator.placeholder.billing_city">ville de facturation</trans>
+    <trans var="validator.placeholder.billing_postalcode">code postal de facturation</trans>
+    <trans var="validator.placeholder.mailing_address">adresse de livraison</trans>
+    <trans var="validator.placeholder.mailing_city">ville de livraison</trans>
+    <trans var="validator.placeholder.mailing_postalcode">code postal de livraison</trans>
+    <trans var="validator.placeholder.max_value"> (maximum : %placeholder% caractères)</trans>
+    <trans var="validator.placeholder.min_value"> (minimum : %placeholder% caractères)</trans>
+    <trans var="validator.placeholder.title">titre</trans>
+    <trans var="validator.placeholder.description">description</trans>
+    <trans var="validator.placeholder.release_date">date de sortie</trans>
+
+
+    <!-- ***** SHOP ***** -->
+
+    <trans var="shop.home.last_games">Nos derniers jeux</trans>
+    <trans var="shop.home.most_sold">Les plus vendus</trans>
+    <trans var="shop.home.view_all">Voir tous les jeux</trans>
+    <trans var="shop.menu_filters.sort_results">Trier les résultats</trans>
+    <trans var="shop.menu_filters.sort_platforms">Par plateforme</trans>
+    <trans var="shop.menu_filters.sort_genres">Par genre</trans>
+    <trans var="shop.menu_filters.applied_filters">Filtres appliqués</trans>
+    <trans var="shop.menu_filters.remove_filters">Supprimer les filtres</trans>
+    <trans var="shop.cart.add">Ajouter au panier</trans>
+    <trans var="shop.cart.order_summary">Résumé</trans>
+    <trans var="shop.cart.total">Total : </trans>
+    <trans var="shop.cart.quantity">Quantité : </trans>
+    <trans var="shop.cart.checkout">Valider</trans>
+    <trans var="shop.cart_redirect.checkout_mandatory">Vous avez été redirigé car vous n'êtes pas identifié.</trans>
+    <trans var="shop.cart.back_shopping">Poursuivre les achats</trans>
+    <trans var="shop.cart_labels.game_title">Titre</trans>
+    <trans var="shop.cart_labels.game_platform">Plateforme</trans>
+    <trans var="shop.cart_labels.game_price">Prix</trans>
+    <trans var="shop.checkout_redirect.empty_cart">Vous avez été rediriré car vous ne pouvez pas valider un panier vide</trans>
+    <trans var="shop.checkout_start.explain">
+        Nous vous remercions de vouloir procéder à vos achats.<![CDATA[<br/>]]>
+        Cependant, la validation de votre panier requiert que vous soyez identifié.<![CDATA[<br/>]]>
+        Si vous avez déjà un compte chez nous, merci de bien vouloir vous connecter, sinon, nous vous invitons à créer un compte, celà ne vous prendra que quelques minutes.
+    </trans>
+    <trans var="shop.minicart.no_items">Aucun article dans votre panier</trans>
+    <trans var="shop.minicart.see_cart">Voir le panier</trans>
+    <trans var="shop.minicart.empty_cart">Vider le panier</trans>
+    <trans var="shop.minicart.checkout">Valider mon panier</trans>
+    <trans var="shop.product.chose_platform">Choisissez une platfeforme</trans>
+    <trans var="shop.product.available">en stock</trans>
+    <trans var="shop.payment.submit">Payer</trans>
+
+
+    <!-- ***** GAME ***** -->
+
+    <trans var="shop.game.pegi_all">Tout public</trans>
+    <trans var="shop.game.pegi_3">3+</trans>
+    <trans var="shop.game.pegi_7">7+</trans>
+    <trans var="shop.game.pegi_12">12+</trans>
+    <trans var="shop.game.pegi_16">16+</trans>
+    <trans var="shop.game.pegi_18">18+</trans>
+
+
+
+    <!-- ***** FORUM ***** -->
+
+    <!-- ***** MODALS ***** -->
+    <trans var="modal.members_details.title">Détails du membre n°%placeholder%</trans>
+    <trans var="modal.members_details.phone">Téléphone : %placeholder%</trans>
+    <trans var="modal.members_details.billing_address">Adresse de Facturation</trans>
+    <trans var="modal.members_details.mailing_address">Adresse de livraison</trans>
+    <trans var="modal.order_details.title">Détails de la commande n°%placeholder%</trans>
+    <trans var="modal.order_details.ordered_by">Commande effectuée par</trans>
+    <trans var="modal.game_details.title">Détails du jeu </trans>
+    <trans var="modal.game_edit.title">Edition d'un jeu</trans>
+
+    <!-- ***** ADMIN ***** -->
+    <trans var="admin.home.title">Espace d'administration</trans>
+    <trans var="admin.home.welcome">
+        Bienvenue sur votre espace d'admnistration.<![CDATA[<br/>]]>
+        Utilisez le menu latéral pour gérer votre site.<![CDATA[<br/>]]>
+    </trans>
+
+</translations>

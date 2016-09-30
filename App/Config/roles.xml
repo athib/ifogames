@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+    Fichier de configuration des Roles des utilisateurs
+    *************************************************************
+
+    Chaque rôle est défini par une balise <role>
+
+    Et pour chaque rôle, on peut définir des accès, à définir dans des balises <granted> à l'intérieur
+    des balises <role>
+
+ -->
+
+<roles>
+
+    <role name="ANONYMOUS"></role>
+    <role name="ROLE_MEMBER">
+        <granted role="ANONYMOUS"></granted>
+    </role>
+    <role name="ROLE_MODERATOR">
+        <granted role="ROLE_MEMBER"></granted>
+        <granted role="ROLE_AUTHOR"></granted>
+    </role>
+    <role name="ROLE_ADMIN">
+        <granted role="ROLE_MODERATOR"></granted>
+    </role>
+    <role name="ROLE_SUPER_ADMIN">
+        <granted role="ROLE_ADMIN"></granted>
+    </role>
+
+</roles>

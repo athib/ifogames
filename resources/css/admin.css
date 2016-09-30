@@ -1,0 +1,20 @@
+#menu-admin,
+#admin-content {
+    background-color: white;
+}
+
+#menu-admin .sublist {
+    display: block;
+}
+
+
+button.action {
+    padding: 4px;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+}
+
+button#add-game-btn {
+    margin: 10px 0px;
+}
