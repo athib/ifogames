@@ -110,6 +110,13 @@ class ShopController extends BackController
             $cart = new Cart();
             $game = $this->managers->getManagerOf('Game')->getGame($idGame);
             $platform = $this->managers->getManagerOf('Platform')->getPlatform($idPlatform);
+            
+            $stock = $this->managers->getManagerOf('Game')->getStockOnPlatform($game, $idPlatform);
+            
+            if ($stock <= 0) {
+                echo json_encode(array('nostock' => true));
+                return;
+            }
 
             $game->setOrderedPlatform($platform);
             $add = $cart->add($game);

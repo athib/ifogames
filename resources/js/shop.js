@@ -25,7 +25,6 @@ $(function() {
         var idGame = $(this).closest('.product-item').find('.id-game').attr('value');
         var idPlatform = $(this).closest('.product-item').find('select.platform-select').val();
 
-        console.log(idPlatform);
         if (idPlatform == null) {
             popup('warning', 'Vous devez choisir une plateforme avant d\'ajouter au panier', 'Action impossible');
             return;
@@ -37,6 +36,10 @@ $(function() {
             dataType: 'json',
             data: { 'idGame': idGame, 'idPlatform': idPlatform },
             success: function(data, status, xhr) {
+                if (data.nostock) {
+                    popup('danger', 'Désolé, ce produit est en rupture de stock. Revenez plus tard.', 'Action impossible');
+                    return;
+                }
                 if (!data.addingOK) {
                     popup('warning', 'Ce produit est déjà dans votre panier.', 'Action impossible');
                     return;

@@ -85,21 +85,31 @@ class OrderManager extends Manager
         $orderId = $this->db->lastInsertId();
 
 
+        $idGame = null;
+        $idPlatform = null;
+
         $query = $this->db->prepare(
             "INSERT INTO myshop_order_has_game (id_order, id_game, id_platform)
             VALUES (:idOrder, :idGame, :idPlatform)"
         );
-
-        $idGame = null;
-        $idPlatform = null;
         $query->bindValue(':idOrder', $orderId, \PDO::PARAM_INT);
         $query->bindParam(':idGame', $idGame, \PDO::PARAM_INT);
         $query->bindParam(':idPlatform', $idPlatform, \PDO::PARAM_INT);
+
+        $queryUpdateStock = $this->db->prepare(
+            "UPDATE myshop_game_has_platform 
+            SET stock = stock-1
+            WHERE id_game = :idGame
+            AND id_platform = :idPlatform"
+        );
+        $queryUpdateStock->bindParam(':idGame', $idGame, \PDO::PARAM_INT);
+        $queryUpdateStock->bindParam(':idPlatform', $idPlatform, \PDO::PARAM_INT);
 
         foreach ($cart->getProducts() as $game) {
             $idGame = $game->getId();
             $idPlatform = $game->getOrderedPlatform()->getId();
             $query->execute();
+            $queryUpdateStock->execute();
         }
     }
 }

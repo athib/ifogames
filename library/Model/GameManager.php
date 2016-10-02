@@ -341,4 +341,22 @@ class GameManager extends Manager
         $query->bindValue(':idGame', $id, \PDO::PARAM_INT);
         $query->execute();
     }
+    
+    public function getStockOnPlatform(Game $game, $idPlatform)
+    {
+        $query = $this->db->prepare(
+            "SELECT *
+            FROM myshop_game_has_platform
+            WHERE id_game = :idGame
+            AND id_platform = :idPlatform"
+        );
+
+        $query->bindValue(':idGame', $game->getId(), \PDO::PARAM_INT);
+        $query->bindValue(':idPlatform', $idPlatform, \PDO::PARAM_INT);
+        $query->execute();
+        
+        $res = $query->fetch();
+        
+        return $res['stock'];
+    }
 }

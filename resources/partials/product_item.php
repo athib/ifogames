@@ -23,7 +23,7 @@
                 </select>
             </div>
             <div class="product-stock" style="display: none;">
-                <span></span> <?php echo $translator->get('shop.product.available'); ?>
+                <span id="platform-stock"></span> <?php echo $translator->get('shop.product.available'); ?>
             </div>
             <div class="buttons-holder">
                 <button class="action action-details btn btn-default my-btn-default btn-quick-view" data-toggle="modal" data-target="#modal-infos" data-route="game-details" data-id="<?php echo $game->getId(); ?>">
