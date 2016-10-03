@@ -1,4 +1,4 @@
-<h1>ADMIN ! (à traduire)</h1>
+<h1><?php echo $translator->get('section_title.admin.home'); ?></h1>
 
 <div class="row">
     <div class="col-md-3">

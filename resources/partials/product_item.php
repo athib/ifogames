@@ -7,7 +7,7 @@
                 <img class="img-responsive" src="<?php echo $jacket; ?>" alt="<?php echo $game->getTitle(); ?>">
             </a>
             <h3 class="product-title">
-                <a href="#"><?php echo $game->getTitle(); ?></a>
+                <?php echo $game->getTitle(); ?>
             </h3>
             <div class="product-price">
                 <span><?php echo $game->getPrice(); ?> €</span>

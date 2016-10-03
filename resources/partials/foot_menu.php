@@ -7,7 +7,7 @@
                     <li><a href="<?php echo ROOTADDRESS.'/'.$translator->getLocale(); ?>/mentions"><?php echo $translator->get('core.foot_menu.legals'); ?></a></li>
                     <li><a href="<?php echo ROOTADDRESS.'/'.$translator->getLocale(); ?>/cgv"><?php echo $translator->get('core.foot_menu.cgv'); ?></a></li>
                     <li><a href="<?php echo ROOTADDRESS.'/'.$translator->getLocale(); ?>/contact"><?php echo $translator->get('core.foot_menu.contact'); ?></a></li>
-                    <li><a href="<?php echo ROOTADDRESS.'/'.$translator->getLocale(); ?>/sitemap"><?php echo $translator->get('core.foot_menu.sitemap'); ?></a></li>
+                    <!--<li><a href="<?php //echo ROOTADDRESS.'/'.$translator->getLocale(); ?>/sitemap"><?php //echo $translator->get('core.foot_menu.sitemap'); ?></a></li>-->
                     <li>
                         <?php
                         $target_uri_fr = str_replace('/'.$translator->getLocale().'/', '/fr/', $this->app->getHttpRequest()->getRequestURI());

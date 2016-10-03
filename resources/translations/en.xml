@@ -29,9 +29,11 @@
     <trans var="core.page_title.payment">Payment summary</trans>
     <trans var="core.page_title.checkout_complete">Command confirmation</trans>
 
-    <trans var="section_title.home.home">Home</trans>
+    <trans var="section_title.admin.home">Administration zone</trans>
+    <trans var="section_title.home.home">Welcome on IfoGames</trans>
     <trans var="section_title.home.conditions">Legals</trans>
     <trans var="section_title.home.cgv">General Terms ans Conditions</trans>
+    <trans var="section_title.home.legals">Legals</trans>
     <trans var="section_title.home.sitemap">Sitemap</trans>
     <trans var="section_title.user.login">Login</trans>
     <trans var="section_title.user.register">Register</trans>
@@ -63,6 +65,45 @@
     <trans var="core.foot_menu.switch_english">Translate in english</trans>
     <trans var="core.foot_menu.site_title">ifogames</trans>
     <trans var="core.foot_menu.made_by">Made by Arnaud</trans>
+
+
+    <!-- ***** CONTENT ***** -->
+    <trans var="content.contact.email">
+        Contacter the website administrator : ifogames@athib.com
+    </trans>
+
+    <trans var="content.home.home_message">
+        <![CDATA[<p>]]>
+            IfoGames, is a website entierely dedicated to the world of video games.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Being here will make you aware of the latest news, on every platforms.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Please come have a look in our shop<![CDATA[<br />]]>
+            You will find all kind of games, on every platforms.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            And if you feel like writing, the forum is made for you.<![CDATA[<br />]]>
+            Share your thoughts with the community, and maybe find some cool stuff !
+        <![CDATA[</p>]]>
+    </trans>
+
+    <trans var="content.home.legals">
+        <![CDATA[<p>]]>
+            IfoGames is a mockup website, without any money making purpose.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            It has been made by Arnaud Thibaudet during a profesionnal training at IFOCOP (Saint Quentin en Yvelines, 78, France) and is just designed to structure a e-commerce website.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            All the products on the site are not for sale, and no payment system is implemented.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Regarding the personnal information you might give to the site are strictly confidential and will never be sold to anyone.<![CDATA[<br />]]>
+            You can ask for complete deletion with a simple email (see contact page).
+        <![CDATA[</p>]]>
+    </trans>
 
 
     <!-- ***** PROFILE ***** -->

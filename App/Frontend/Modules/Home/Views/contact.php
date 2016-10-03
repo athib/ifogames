@@ -1,3 +1,8 @@
+<section class="row">
+    <div class="jumbotron">
+        <p class="text-center"><?php echo $translator->get('content.contact.email'); ?></p>
+    </div>
+</section>
 <section class="page-section row">
     <div class="col-md-4">
         <div id="gmap">

@@ -29,9 +29,11 @@
     <trans var="core.page_title.payment">Récapitulatif et paiement</trans>
     <trans var="core.page_title.checkout_complete">Confirmation de commande</trans>
 
-    <trans var="section_title.home.home">Accueil du site</trans>
+    <trans var="section_title.admin.home">Espace d'administration</trans>
+    <trans var="section_title.home.home">Bienvenue sur IfoGames</trans>
     <trans var="section_title.home.conditions">Mentions légales</trans>
     <trans var="section_title.home.cgv">Conditions Générales de vente</trans>
+    <trans var="section_title.home.legals">Mentions légales</trans>
     <trans var="section_title.home.sitemap">Plan du site</trans>
     <trans var="section_title.user.login">Se connecter</trans>
     <trans var="section_title.user.register">S'inscrire</trans>
@@ -63,6 +65,45 @@
     <trans var="core.foot_menu.switch_english">Traduire en anglais</trans>
     <trans var="core.foot_menu.site_title">ifogames</trans>
     <trans var="core.foot_menu.made_by">Réalisé par Arnaud</trans>
+
+
+    <!-- ***** CONTENT ***** -->
+    <trans var="content.contact.email">
+        Contacter l'administrateur du site : <![CDATA[<a href="mailto:ifogames@athib.com">]]>ifogames@athib.com<![CDATA[</a>]]>
+    </trans>
+
+    <trans var="content.home.home_message">
+        <![CDATA[<p>]]>
+            IfoGames, un site dédié entièrement à l'univers du jeu vidéo.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Ici, vous pourrez vous tenir au courant des dernières actualités du jeu vidéo, nous couvrons un maximum d'informations, quelque soit la plateforme.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            N'hésitez pas à explorer notre boutique<![CDATA[<br />]]>
+            Nous proposons des jeux sur toutes les plateformes fixes et mobiles.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Enfin, si l'envie de prendre la plume vous démange, le forum vous attend.<![CDATA[<br />]]>
+            Ce sera l'occasion d'échanger avec la communauté et de partager des bons plans.
+        <![CDATA[</p>]]>
+    </trans>
+
+    <trans var="content.home.legals">
+        <![CDATA[<p>]]>
+            IfoGames est un site purement fictif, sans aucune vocation commerciale.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Il est réalisé par Arnaud Thibaudet dans le cadre d'une formation à l'IFOCOP de Saint Quentin en Yvelines (78), et a uniquement pour but de mettre en place la structure d'un site de E-commerce.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Tous les produits que vous trouverez dans la boutique ne sont donc pas réellement à vendre, et aucun moyen de paiement n'est mis en place.
+        <![CDATA[</p>]]>
+        <![CDATA[<p>]]>
+            Enfin, les informations personnelles pouvant être saisies ne font l'objet d'aucune revente à des fins commerciales.<![CDATA[<br />]]>
+            Vous pouvez tout de même exercer votre de droit à l'effacement des données, conformément à la loi Informatique et Libertés de janvier 1978.
+        <![CDATA[</p>]]>
+    </trans>
 
 
     <!-- ***** PROFILE ***** -->

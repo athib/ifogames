@@ -6,6 +6,7 @@
         <p>
             <?php echo $this->app->getTranslator()->get('modal.games_details.title : '); ?> : <?php echo $game->getTitle(); ?>
             <br />description : <?php echo $game->getDescription(); ?>
+            <br />Genres : <?php echo implode(', ', $game->getGenres()->toArray()); ?>
             <br />PEGI : <?php echo $game->getPegi(); ?>
             <br />plateformes : <?php echo implode(', ', $game->getPlatforms()->toArray()); ?>
             <br />editeur : <?php echo $game->getEditor()->getName(); ?>
