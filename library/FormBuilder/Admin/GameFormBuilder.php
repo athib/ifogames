@@ -13,6 +13,7 @@ use FormBuilder\HiddenField;
 use FormBuilder\TextField;
 use FormBuilder\Validator\NotNullValidator;
 use FormBuilder\Validator\DateFormatValidator;
+use FormBuilder\Validator\NumericValidator;
 use Model\EditorManager;
 use Model\PlatformManager;
 
@@ -88,7 +89,8 @@ class GameFormBuilder extends FormBuilder
                 'name' => 'price',
                 'label' => $this->translator->get('admin.addgame_form.price'),
                 'validators' => [
-                    new NotNullValidator($this->translator->get('validator.form.not_null', $placeholderReleaseDate)),
+                    new NotNullValidator($this->translator->get('validator.form.not_null', 'Prix')),
+                    new NumericValidator('Le prix doit être un nombre'),
                 ],
             ]))
             ->add(new ChoiceField([

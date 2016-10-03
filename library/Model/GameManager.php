@@ -256,11 +256,20 @@ class GameManager extends Manager
         $query->execute();
         $res = $query->fetch();
 
-        $query = $this->db->prepare("DELETE FROM myshop_game WHERE id_game = :idGame");
-        $query->bindValue(':idGame', $id, \PDO::PARAM_INT);
-        $query->execute();
+        $queryDeleteGame = $this->db->prepare("DELETE FROM myshop_game WHERE id_game = :idGame");
+        $queryDeleteGame->bindValue(':idGame', $id, \PDO::PARAM_INT);
 
-        if ($res) {
+        $queryDeleteGameGenres = $this->db->prepare("DELETE FROM myshop_game_has_genre WHERE id_game = :idGame");
+        $queryDeleteGameGenres->bindValue(':idGame', $id, \PDO::PARAM_INT);
+
+        $queryDeleteGamePlatforms = $this->db->prepare("DELETE FROM myshop_game_has_platform WHERE id_game = :idGame");
+        $queryDeleteGamePlatforms->bindValue(':idGame', $id, \PDO::PARAM_INT);
+
+        $queryDeleteGamePlatforms->execute();
+        $queryDeleteGameGenres->execute();
+        $queryDeleteGame->execute();
+
+        if ($res && !empty($res['jacket'])) {
             $filePath = sprintf(
                 '%s%s%s%s',
                 $_SERVER['DOCUMENT_ROOT'],
